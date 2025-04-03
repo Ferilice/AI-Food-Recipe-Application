@@ -9,12 +9,14 @@ import 'screens/search_camera_screen.dart';
 import 'screens/todo_screen.dart';
 import 'screens/bookmark/bookmark_screen.dart';
 import 'screens/settings_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  await dotenv.load(fileName: ".env");
   final cameras = await availableCameras();
   final firstCamera = cameras.first;
+
 
   runApp(
     MultiProvider(
