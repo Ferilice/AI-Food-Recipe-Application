@@ -1,7 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-// 640510675 Poomiputh Boonma
-// 640510678 Rattapoom Pattanayonchai
-
 import 'package:flutter/material.dart';
 
 import '../../database/enums/recipe_tag.dart';

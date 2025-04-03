@@ -1,6 +1,3 @@
-// 640510612 Natchanon Jina
-// 640510675 Poomiputh Boonma
-
 import 'database.dart';
 
 /// Singleton sqlite database class for storing user data locally using Drift package.

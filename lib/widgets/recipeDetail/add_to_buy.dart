@@ -1,5 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_group_project/database/local_database.dart';
 

@@ -1,6 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-// 640510675 Poomiputh Boonma
-
 import 'package:drift/drift.dart' as drift;
 import 'package:flutter/material.dart';
 import 'package:flutter_application_group_project/database/local_database.dart';

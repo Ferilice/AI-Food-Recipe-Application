@@ -1,7 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-// 640510675 Poomiputh Boonma
-// 640510678 Rattapoom Pattanayonchai
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_group_project/screens/recipe_detail_screen.dart';

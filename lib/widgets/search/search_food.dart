@@ -1,5 +1,3 @@
-// 640510675 Poomiputh Boonma
-
 import 'package:drift/drift.dart' as drift;
 import 'package:flutter/material.dart';
 import 'package:flutter_application_group_project/helpers/food_guru.dart';

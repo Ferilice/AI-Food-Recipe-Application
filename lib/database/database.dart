@@ -1,6 +1,3 @@
-// 640510612 Natchanon Jina
-// 640510675 Poomiputh Boonma
-
 import 'dart:convert';
 
 import 'package:drift/drift.dart';

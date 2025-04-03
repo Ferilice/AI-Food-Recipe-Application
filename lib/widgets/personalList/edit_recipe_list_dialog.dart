@@ -1,5 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-
 import 'package:flutter/material.dart';
 
 /// A dialog that prompts the user to edit a playlist

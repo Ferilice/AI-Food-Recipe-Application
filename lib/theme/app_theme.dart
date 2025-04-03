@@ -1,5 +1,3 @@
-// 640510646 Jedsadaporn Nedpab
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
