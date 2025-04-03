@@ -1,16 +1,22 @@
-# flutter_application_group_project
+# 🍽️ AI Food Recipe Application  
 
-A new Flutter project.
+AI-powered food recipe app built with Flutter.  
 
-## Getting Started
+## 🚀 Introduction  
+AI Food Recipe Application is a smart cooking assistant that helps users discover recipes based on the ingredients they have. It also provides various features to make cooking easier and more enjoyable.  
 
-This project is a starting point for a Flutter application.
+## ✨ Features  
+- 🔍 **Search Recipes by Ingredients** – Find recipes based on available ingredients.  
+- 📸 **Image-Based Recipe Search** – Use the camera to find recipes based on food images.  
+- 📝 **To-Buy List** – Save missing ingredients in a shopping list.  
+- 📖 **Recipe Collection** – Save and organize favorite recipes.  
+- 🎨 **Theme Customization** – Change the app’s color theme to suit your preferences.  
+- 🤖 **Gemini AI Integration** – Uses Gemini AI to enhance recipe searches.  
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Installation  
+To run the project locally, follow these steps:  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+git clone https://github.com/username/AI-Food-Recipe-Application.git
+cd AI-Food-Recipe-Application
+flutter pub get
