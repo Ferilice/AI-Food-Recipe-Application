@@ -65,15 +65,14 @@ class _BookmarkPageState extends State<BookMarkScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
-        backgroundColor: theme.primaryColor,
-        elevation: 2,
+        backgroundColor: theme.appBarTheme.backgroundColor,
+        elevation: 0,
         title: Text(
-          "บันทึกเมนู",
+          'บันทึกเมนู',
           style: theme.textTheme.headlineSmall?.copyWith(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+            color: theme.colorScheme.onSurface, // ใช้สีของ primary color
           ),
         ),
         centerTitle: false,
@@ -122,15 +121,17 @@ class _BookmarkPageState extends State<BookMarkScreen> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => BookmarkDetailScreen(
-                                          bookmark: bookmarks.elementAt(index)),
+                                      builder: (context) =>
+                                          BookmarkDetailScreen(
+                                              bookmark:
+                                                  bookmarks.elementAt(index)),
                                     ),
                                   );
                                 },
                                 child: Container(
                                   padding: EdgeInsets.all(10),
                                   decoration: BoxDecoration(
-                                    color: Colors.white,
+                                    color: theme.cardColor,
                                     borderRadius: BorderRadius.circular(12),
                                     boxShadow: [
                                       BoxShadow(
@@ -155,7 +156,7 @@ class _BookmarkPageState extends State<BookMarkScreen> {
                                         right: 5,
                                         top: 5,
                                         child: PopupMenuButton<String>(
-                                          color: Colors.white,
+                                          color: theme.cardColor,
                                           onSelected: (value) {
                                             if (value == "edit") {
                                               _editBookmark(
@@ -200,7 +201,19 @@ class _BookmarkPageState extends State<BookMarkScreen> {
                             },
                           );
                   } else {
-                    return Center(child: Text('ไม่มีข้อมูล'));
+                    return Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('ยังไม่มีบันทึกรายการ',
+                              style: theme.textTheme.bodyLarge),
+                          SizedBox(height: 8),
+                          Text('คุณยังไม่สร้างบันทึกรายการใดๆ',
+                              style: theme.textTheme.bodyMedium
+                                  ?.copyWith(color: Colors.grey)),
+                        ],
+                      ),
+                    );
                   }
                 } else {
                   return Center(child: CircularProgressIndicator());
